@@ -1,3 +1,21 @@
-export const Main = () => {
-  return <h1>Main Component</h1>;
+export const Main = ({ changeName }) => {
+  return (
+    <div>
+      <div className="row">
+        <div className="col-xs-12">
+          <h1>The Main Page</h1>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-xs-12">
+          <button
+            className="btn btn-primary"
+            onClick={() => changeName("Virat")}
+          >
+            Change the Username
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 };

@@ -10,7 +10,7 @@ class App extends React.Component {
     };
   }
 
-  setName = (name) => {
+  changeName = (name) => {
     console.log(name);
     this.setState({
       name: name
@@ -20,10 +20,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <button onClick={() => this.setName("Virat")}> Change Name </button>
-        <h1>{this.state.name}</h1>
-        <Main />
-        <User />
+        <Main changeName={this.changeName} />
+        <User userName={this.state.name} />
       </div>
     );
   }
