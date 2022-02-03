@@ -34,8 +34,13 @@ store.dispatch({
 });
 
 store.dispatch({
+  type: "ADD",
+  payload: 20
+});
+
+store.dispatch({
   type: "SUB",
-  payload: 5
+  payload: 10
 });
 
 const rootElement = document.getElementById("root");
