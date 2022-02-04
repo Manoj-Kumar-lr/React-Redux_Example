@@ -10,7 +10,7 @@ export const Main = ({ changeName }) => {
         <div className="col-xs-12">
           <button
             className="btn btn-primary"
-            onClick={() => changeName("Virat")}
+            onClick={() => changeName("King Kohli")}
           >
             Change the Username
           </button>
