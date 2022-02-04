@@ -23,8 +23,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <Main changeName={() => this.props.setName("King Kohli")} />
-        <User userName={this.props.user.name} />
+        <Main
+          changeName={() => this.props.setName("King Kohli")}
+          changeAge={() => this.props.setAge("30")}
+        />
+        <User user={this.props.user} />
       </div>
     );
   }
